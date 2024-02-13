@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/app_icon_size"
+    android:layout_height="@dimen/app_icon_size">
+
+    <com.ecarx.systemui.plugin.navigationbar.RecentIconView
+        android:id="@+id/item_recent_icon_view"
+        android:layout_width="@dimen/app_icon_size"
+        android:layout_height="@dimen/app_icon_size"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter" />
+</FrameLayout>

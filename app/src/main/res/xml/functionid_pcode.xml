@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Priorities>
+    <Priority functionId="269549825" functionName="resource_prefix">
+        <pcode prefix="kx11">IHU501G
+        </pcode>
+        <pcode prefix="kx11">IHU502G
+        </pcode>
+        <pcode prefix="kx11">XE38_31D
+        </pcode>
+        <pcode prefix="kx11">DHU605G
+        </pcode>
+        <pcode prefix="ex11">DHU604L
+        </pcode>
+        <pcode prefix="default">full_IHU503G
+        </pcode>
+        <pcode prefix="default">IHU503G
+        </pcode>
+    </Priority>
+</Priorities>

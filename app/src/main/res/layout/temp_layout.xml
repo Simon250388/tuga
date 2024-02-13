@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ecarx.systemui.plugin.hvac.HvacView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/root_relative"
+        android:layout_width="wrap_content"
+        android:layout_height="126dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <com.ecarx.systemui.plugin.utils.AlphaTextView
+            android:id="@+id/text_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="bottom"
+            android:includeFontPadding="false"
+            android:textColor="@color/temp_text_color"
+            android:textSize="36sp"
+            android:textStyle="bold" />
+
+        <com.ecarx.systemui.plugin.utils.AlphaTextView
+            android:id="@+id/text_temp_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="4dp"
+            android:includeFontPadding="false"
+            android:text="o"
+            android:textColor="@color/temp_text_color"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <com.ecarx.systemui.plugin.utils.AlphaImageView
+            android:id="@+id/iv_fan_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_temp"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/kx11_max_air_quantity_0" />
+    </RelativeLayout>
+</com.ecarx.systemui.plugin.hvac.HvacView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="@dimen/status_bar_icon_width"
+    android:height="@dimen/status_bar_icon_height"
+    android:autoMirrored="true"
+    android:viewportWidth="40"
+    android:viewportHeight="40">
+    <path
+        android:fillColor="@color/status_bar_tint_color"
+        android:fillType="nonZero"
+        android:pathData="M34,10L34,31L6,31L6,10L34,10ZM31.9976,13.014L19.7363,23.0795L8.0082,13.068L8.0084,28.9987L31.9979,28.9987L31.9976,13.014ZM29.938,12L9.971,12L19.7636,20.2611L29.938,12Z"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+    <path
+        android:fillColor="#ce0202"
+        android:fillType="evenOdd"
+        android:pathData="M33,10m-4,0a4,4 0,1 1,8 0a4,4 0,1 1,-8 0"
+        android:strokeWidth="1"
+        android:strokeColor="#00000000" />
+</vector>

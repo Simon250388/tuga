@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ecarx.systemui.plugin.statusbar.StatusBarView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="@dimen/status_bar_padding_left"
+    android:paddingEnd="@dimen/status_bar_padding_right">
+
+    <com.ecarx.systemui.plugin.statusbar.iconview.EcarxClock
+        android:id="@+id/status_bar_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimary_test1"
+        android:format12Hour="h:mma"
+        android:format24Hour="HH:mm"
+        android:gravity="start|center_vertical"
+        android:paddingStart="@dimen/status_clock_padding_left"
+        android:paddingEnd="@dimen/status_clock_padding_right"
+        android:singleLine="true"
+        android:textColor="@color/status_bar_text_color"
+        android:textSize="@dimen/clock_text_size" />
+
+    <com.ecarx.systemui.plugin.statusbar.SystemIconContainer
+        android:id="@+id/darea_icons_container"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/status_bar_clock"
+        android:background="@color/colorPrimary_test4"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" />
+</com.ecarx.systemui.plugin.statusbar.StatusBarView>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="420dp"
+        android:layout_height="220dp"
+        android:background="@drawable/wpc_dialog_bg"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/massage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/wpc_dialog_tv_color"
+            android:textSize="@dimen/wpc_dialog_tv_size" />
+    </LinearLayout>
+</LinearLayout>

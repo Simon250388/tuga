@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ecarx.systemui.plugin"
+    android:versionCode="1"
+    android:versionName="2.21.20220224G">
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.car.permission.CAR_VENDOR_EXTENSION" />
+    <application
+        android:name="com.ecarx.systemui.plugin.App"
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:extractNativeLibs="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@drawable/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.ecarx.systemui.plugin.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SYSTEMUI_WIDGET" />
+
+                <category android:name="NONE" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.ecarx.systemui.plugin.navigationbar.AppWatcherService"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:process="com.android.systemui"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/config_watcher_service" />
+        </service>
+        <service
+            android:name="com.ecarx.systemui.plugin.navigationbar.UserDataService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.ecarx.systemui.plugin.DATA_HELP_SERVICE" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="com.ecarx.systemui.plugin.navigationbar.NaviSensorsDataProvider"
+            android:authorities="com.android.systemui.SensorsDataContentProvider"
+            android:process="com.android.systemui" />
+
+        <meta-data
+            android:name="minAdaptAPIVersion"
+            android:value="1.0.19,1.1.17" />
+        <meta-data
+            android:name="easVersionFingerprint"
+            android:value="2.21.20220224G.-,,," />
+
+        <provider
+            android:name="com.sensorsdata.analytics.android.sdk.data.SensorsDataContentProvider"
+            android:authorities="com.ecarx.systemui.plugin.SensorsDataContentProvider"
+            android:enabled="true"
+            android:exported="false" />
+        <meta-data
+            android:name="com.sensorsdata.analytics.android.MainProcessName"
+            android:value="com.ecarx.systemui.plugin" />
+    </application>
+</manifest>

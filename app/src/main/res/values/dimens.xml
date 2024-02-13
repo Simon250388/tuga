@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="app_icon_margin_end">48dp</dimen>
+    <dimen name="app_icon_size">80dp</dimen>
+    <dimen name="app_icon_space">40dp</dimen>
+    <dimen name="app_small_icon_size">44dp</dimen>
+
+    <dimen name="navi_content_width">120dp</dimen>
+    <dimen name="navi_content_height">720dp</dimen>
+    <dimen name="nav_icon_width">120dp</dimen>
+    <dimen name="clock_text_size">25sp</dimen>
+    <dimen name="status_bar_padding_left">0dp</dimen>
+    <dimen name="status_bar_padding_right">0dp</dimen>
+    <dimen name="status_clock_padding_left">6dp</dimen>
+    <dimen name="status_clock_padding_right">16dp</dimen>
+    <dimen name="status_bar_height">50dp</dimen>
+    <dimen name="nav_bar_height">80dp</dimen>
+    <dimen name="nav_icon_height">126dp</dimen>
+    <dimen name="navi_home_margin_top">549dp</dimen>
+    <dimen name="navi_app_pane_margin_top">390dp</dimen>
+    <dimen name="navi_car_margin_top">71dp</dimen>
+    <dimen name="navi_content_radius">20dp</dimen>
+    <dimen name="status_bar_home_padding_right">1190dp</dimen>
+    <dimen name="status_bar_nothome_padding_right">0dp</dimen>
+    <dimen name="status_bar_icon_margin_right">0dp</dimen>
+    <dimen name="psd_navi_content_width">120dp</dimen>
+    <dimen name="psd_navi_content_height">720dp</dimen>
+    <dimen name="psd_navi_content_x">1800dp</dimen>
+    <dimen name="psd_navi_content_y">0dp</dimen>
+    <dimen name="psd_status_content_width">1800dp</dimen>
+    <dimen name="psd_status_content_height">50dp</dimen>
+    <dimen name="psd_status_content_x">0dp</dimen>
+    <dimen name="psd_status_content_y">0dp</dimen>
+    <dimen name="status_bar_icon_height">50dp</dimen>
+    <dimen name="status_bar_icon_width">40dp</dimen>
+
+    <dimen name="power_rect_bottom">34dp</dimen>
+    <dimen name="power_rect_left">14dp</dimen>
+    <dimen name="power_rect_right">27dp</dimen>
+    <dimen name="power_rect_top">18dp</dimen>
+
+    <dimen name="wpc_dialog_tv_size">34sp</dimen>
+
+    <dimen name="message_text_size">14sp</dimen>
+</resources>

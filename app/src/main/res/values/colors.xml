@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="status_bar_text_color">#ff000000</color>
+
+    <color name="colorAccent">#ff4081</color>
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+
+    <color name="power_progress_bg">#ff1bc30b</color>
+
+    <color name="nav_content_bg_color_end">#80dae2ec</color>
+    <color name="nav_content_bg_color_start">#80ffffff</color>
+
+    <color name="nav_user_border_color">#ffffffff</color>
+
+    <color name="psd_nav_content_bg_color_start">#edf2f8</color>
+    <color name="psd_nav_content_bg_color_end">#dbe5f3</color>
+
+
+    <color name="colorPrimary_test1">#003f51b5</color>
+    <color name="colorPrimary_test2">#00ff4081</color>
+    <color name="colorPrimary_test3">#00ff8811</color>
+    <color name="colorPrimary_test4">#001bc30b</color>
+    <color name="colorPrimary_test5">#00000000</color>
+
+    <color name="wpc_dialog_tv_color">#ffffff</color>
+
+    <color name="dialog_tourist_logout_cancel">#80000000</color>
+    <color name="dialog_tourist_logout_content">#e6000000</color>
+    <color name="dialog_tourist_logout_fix">#3679f2</color>
+    <color name="dialog_tourist_logout_line">#33000000</color>
+    <color name="dialog_tourist_logout_title">#e6000000</color>
+
+    <color name="status_bar_tint_color">#000000</color>
+
+
+    <color name="temp_text_color">#ff222735</color>
+    <color name="temp_text_color_50">#ff222735</color>
+    <color name="temp_text_color_partial">#ff222735</color>
+    <color name="temp_tv_color">#ff222735</color>
+
+
+<!--    public static final int temp_text_color = 0x7f040073;-->
+<!--    public static final int temp_text_color_50 = 0x7f040074;-->
+<!--    public static final int temp_text_color_partial = 0x7f040075;-->
+<!--    public static final int temp_tv_color = 0x7f040076;-->
+</resources>
