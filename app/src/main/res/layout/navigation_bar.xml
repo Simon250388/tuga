@@ -15,16 +15,16 @@
         android:layout_width="120dp"
         android:layout_height="@dimen/navi_content_height"
         android:background="@drawable/nav_content_window_bg_new">
-        <!--        its i do-->
+
         <com.ecarx.systemui.plugin.utils.AlphaImageView
-            android:id="@+id/navigation_bar_go_to_navi"
+            android:id="@+id/navigation_bar_go_back"
             android:layout_width="@dimen/nav_icon_width"
             android:layout_height="@dimen/nav_icon_height"
             android:layout_alignParentStart="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/navi_home_margin_top"
+            android:layout_marginTop="@dimen/navi_go_back_margin_top"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/ic_nav_home" />
+            app:srcCompat="@drawable/ic_nav_car" />
 
         <com.ecarx.systemui.plugin.utils.AlphaImageView
             android:id="@+id/navigation_bar_home_iv"
@@ -55,16 +55,17 @@
             android:layout_marginTop="@dimen/navi_car_margin_top"
             android:scaleType="fitCenter"
             app:srcCompat="@drawable/ic_nav_car" />
-        <!--        its i do-->
+
+
         <com.ecarx.systemui.plugin.utils.AlphaImageView
-            android:id="@+id/navigation_bar_go_back"
+            android:id="@+id/navigation_bar_go_to_navi"
             android:layout_width="@dimen/nav_icon_width"
             android:layout_height="@dimen/nav_icon_height"
             android:layout_alignParentStart="true"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/navi_car_margin_top"
+            android:layout_marginTop="@dimen/navi_app_navi_margin_top"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/ic_nav_car" />
+            app:srcCompat="@drawable/ic_nav_home" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/nav_recent_rv"

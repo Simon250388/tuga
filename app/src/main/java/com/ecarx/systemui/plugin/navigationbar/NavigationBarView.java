@@ -137,17 +137,11 @@ public class NavigationBarView extends FrameLayout implements View.OnSystemUiVis
                     NavigationBarView.this.closeAppPane();
                     NavigationBarView.this.gotoCar();
                 }
-                // its i do
                 else if (R.id.navigation_bar_go_back == view.getId()) {
-                    Lg.i(NavigationBarView.TAG, "[JRSYS][onNoDoubleClick] go_back");
-                    StatisticsUtil.recoardSensorsEvent(StatisticsUtil.SENSORS_EVENT_BACK_CLK);
-                    // todo
+                    NavigationBarView.this.gotoBack();
                 } else if (R.id.navigation_bar_go_to_navi == view.getId()) {
-                    Lg.i(NavigationBarView.TAG, "[JRSYS][onNoDoubleClick] open_navi");
-                    StatisticsUtil.recoardSensorsEvent(StatisticsUtil.SENSORS_EVENT_BACK_CLK);
                     NavigationBarView.this.openNavi();
                 }
-                // its i do
             }
         };
         this.mContext = context;
@@ -171,9 +165,9 @@ public class NavigationBarView extends FrameLayout implements View.OnSystemUiVis
         this.hvacBar = findViewById(R.id.navigation_bar_hvac);
         this.recentRecyclerView = findViewById(R.id.nav_recent_rv);
         // its i do
-        this.mCarGoBack = (FrameLayout) findViewById(R.id.navigation_bar_go_back);
+        this.mCarGoBack = findViewById(R.id.navigation_bar_go_back);
         this.mCarGoBack.setOnClickListener(this.clickListener);
-        this.openNavi = (FrameLayout) findViewById(R.id.navigation_bar_app_pane_iv);
+        this.openNavi = findViewById(R.id.navigation_bar_app_pane_iv);
         this.openNavi.setOnClickListener(this.clickListener);
 
         this.mContext.getContentResolver().registerContentObserver(Settings.Global.getUriFor("device_provisioned"), false, this.mScreenshotButtonShowObserver);

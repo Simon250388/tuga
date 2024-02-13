@@ -28,10 +28,8 @@
         <activity android:name="com.ecarx.systemui.plugin.MainActivity"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.SYSTEMUI_WIDGET" />
-
-                <category android:name="NONE" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
 

@@ -20,6 +20,11 @@
     <dimen name="navi_app_pane_margin_top">390dp</dimen>
     <dimen name="navi_car_margin_top">71dp</dimen>
     <dimen name="navi_content_radius">20dp</dimen>
+    <dimen name="navi_go_back_margin_top">670dp</dimen>
+    <dimen name="navi_app_navi_margin_top">30dp</dimen>
+
+
+
     <dimen name="status_bar_home_padding_right">1190dp</dimen>
     <dimen name="status_bar_nothome_padding_right">0dp</dimen>
     <dimen name="status_bar_icon_margin_right">0dp</dimen>
